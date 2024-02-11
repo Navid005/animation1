@@ -1,0 +1,92 @@
+body{
+    display:grid; 
+    background-color: dimgrey;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-right: 300px;
+}
+.div1{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    animation-name: second;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    background-image: linear-gradient(red,aqua,blue,white);
+    border-radius: 50px;
+}
+.div2{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    animation-name: third;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+   background-image: linear-gradient(green,yellow,orange,black);
+    border-radius: 50px;
+}
+.div3{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    animation-name: first;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    background-image: linear-gradient(purple,gray,white,black);
+    text-align: right;
+    border-radius: 50px;
+}
+.div4{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 35%;
+    right: 25%;
+    animation-name: forth;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    background-image: linear-gradient(rgb(128, 0, 0),rgb(74, 130, 178),rgb(77, 124, 23),rgb(221, 216, 240));
+    text-align: right;
+    border-radius: 50px;
+}
+
+@keyframes first{
+    0%{
+         left: 0px; top: 0px;
+    }
+    100%{
+         left: 400px; top:  350px;
+    }
+}
+@keyframes second{
+    0%{
+          top: 0px; left: 0px; 
+    }
+    100%{
+          top:  430px; left: 200px;
+    }
+}
+@keyframes third{
+    0%{
+          top: 0px; left: 0px;
+    }
+    100%{
+          top:  390px; left: 0px;
+    }
+}
+
+@keyframes forth{
+    0%{
+           right: 0px; left: 0px;
+    }
+    100%{
+           right: 200px; left: 200px;
+    }
+}
+
+
